@@ -1,0 +1,33 @@
+template_name: factual_evaluation_source_based
+template_label: factual_evaluation_source_based
+template_description: Factuality in Source Based
+
+
+interface_text:
+  typology:
+    context_label: "Article"
+    source_label: "Generated Summary"
+
+
+
+display:
+- side-by-side
+
+edits:
+    -   name: Inconsistency
+        label: "Inconsistency"
+        color: blue
+        icon: fa-box
+        annotation:
+        -   name: Inconsistency
+            question: "Pick the most appropriate reason"
+            options:
+                -   name: contradicting
+                    label: "Contradicting"
+
+                -   name: unsupported
+                    label: "Unsupported"
+                    
+                -   name: partially supported
+                    label: "Partially supported"
+    
